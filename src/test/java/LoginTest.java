@@ -21,6 +21,7 @@ public class LoginTest {
 	public void doLogin() {
 		driver.get("http://www.gmail.com");
 		driver.findElement(By.cssSelector("#identifierId")).sendKeys("devraj@gmail.com");
+		driver.findElement(By.xpath("signUp")).click();
 	}
 	
 	@AfterSuite
